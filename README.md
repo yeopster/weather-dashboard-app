@@ -38,5 +38,5 @@ This Angular app fetches and displays 4-day weather forecasts from the [Data.gov
    cd weather-forecast-app
 
 ## Screenshot
-![weather_dashboard.png](weather)
+![weather_dashboard](weather_dashboard.png)
 
