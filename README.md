@@ -37,3 +37,6 @@ This Angular app fetches and displays 4-day weather forecasts from the [Data.gov
    git clone https://github.com/your-username/weather-forecast-app.git
    cd weather-forecast-app
 
+## Screenshot
+![weather_dashboard.png](weather)
+
