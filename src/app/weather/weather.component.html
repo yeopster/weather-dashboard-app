@@ -1,0 +1,32 @@
+<div class="container mt-4">
+  <h2>Weather Forecast</h2>
+  <div class="mb-3 input-group">
+    <label for="startDate" class="form-label w-100">Start Date:</label>
+    <div class="d-flex gap-2">
+      <input type="date" id="startDate" class="form-control" [(ngModel)]="startDate" />
+      <button class="btn btn-secondary" (click)="resetDate()">
+        <i class="bi bi-arrow-clockwise"></i> Reset Date
+      </button>
+      <button class="btn btn-primary" (click)="refreshData()">Load Data</button>
+    </div>
+  </div>
+  <div class="weather-display">
+    <div class="table-section">
+      <h4>Temperature and Humidity Table</h4>
+      <ag-grid-angular
+        style="width: 100%; height: 400px;"
+        class="ag-theme-alpine"
+        [rowData]="rowData"
+        [columnDefs]="columnDefs">
+      </ag-grid-angular>
+    </div>
+    <div class="chart-section">
+      <h4>Trend Chart</h4>
+      <highcharts-chart
+        [Highcharts]="Highcharts"
+        [options]="chartOptions"
+        style="width: 100%; height: 400px; display: block;">
+      </highcharts-chart>
+    </div>
+  </div>
+</div>
