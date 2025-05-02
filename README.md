@@ -1,30 +1,39 @@
-# Weather Dashboard Application
+# 🌦️ Weather Forecast App (Singapore) - Angular + Highcharts + ag-Grid
 
-## Overview
-This project build an Angular application
+This Angular app fetches and displays 4-day weather forecasts from the [Data.gov.sg Weather API](https://api.data.gov.sg/v1/environment/4-day-weather-forecast), visualizing temperature and humidity trends using:
 
-weather-forecast-app/
-├── src/
-│   ├── app/
-│   │   ├── app.component.ts
-│   │   ├── app.component.html
-│   │   ├── app.component.css
-│   │   ├── app.module.ts
-│   │   ├── weather.service.ts
-│   │   ├── chart/
-│   │   │   ├── chart.component.ts
-│   │   │   ├── chart.component.html
-│   │   │   ├── chart.component.css
-│   │   ├── table/
-│   │   │   ├── table.component.ts
-│   │   │   ├── table.component.html
-│   │   │   ├── table.component.css
-│   ├── assets/
-│   ├── index.html
-│   └── styles.css
-├── angular.json
-├── package.json
-└── README.md
+- 📈 **Highcharts** for charts
+- 📊 **ag-Grid** for tabular data
+- 🎨 **Bootstrap** for responsive styling
 
+---
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/yeopster/weather-dashboard-app)
+## 🔧 Features
+
+- 📅 Select start date to fetch historical forecast (based on available API data)
+- 🔁 Refresh button to load new data
+- 📊 Trend chart for temperature and humidity over the last 4 days
+- 🧾 ag-Grid table for structured data display
+- 📱 Responsive and clean UI
+
+---
+
+## 📦 Tech Stack
+
+| Tool | Usage |
+|------|-------|
+| Angular | Frontend framework |
+| Highcharts + highcharts-angular | For plotting interactive charts |
+| ag-grid-angular | Powerful grid component |
+| Bootstrap | Styling and layout |
+| RxJS & HttpClient | API integration |
+
+---
+
+## 🚀 Setup Instructions
+
+1. **Clone the repo:**
+   ```bash
+   git clone https://github.com/your-username/weather-forecast-app.git
+   cd weather-forecast-app
+
